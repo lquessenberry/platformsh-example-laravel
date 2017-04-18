@@ -103,7 +103,7 @@ return [
     |
     */
 
-    'key' => env('PLATFORM_PROJECT_ENTROPY'),
+    'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
 
