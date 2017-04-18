@@ -1,12 +1,5 @@
 <?php
 
-$config = new \Platformsh\ConfigReader\Config();
-if($config->isAvailable()){
-    foreach($config->variables as $k => $v) {
-        putenv("$k=$v");
-    }
-}
-
 return [
 
     /*
@@ -110,7 +103,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('PLATFORM_PROJECT_ENTROPY'),
 
     'cipher' => 'AES-256-CBC',
 
